@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Introduction</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>JavaScript Introduction</h1>
+		<p>"This page contains some examples of what JavaScript can do."</p>
+		<br>
+
+		<h2>JavaScript can change HTML content</h2>
+		<p id="demo" onclick="demo()">This sentence will be changed after you click it.</p>
+		<br>
+
+		<h2>JavaScript can change HTML attribute values</h2>
+		<button onclick="document.getElementById('imgBulb').src='img/pic_bulbon.gif'">Turn on the light</button>
+		<img src="img/pic_bulboff.gif" id="imgBulb" alt="">
+		<button onclick="document.getElementById('imgBulb').src='img/pic_bulboff.gif'">Turn off the light</button>
+		<br>
+
+		<h2>JavaScript can change styles (CSS)</h2>
+		<p id="demo2" onclick="document.getElementById('demo2').style.color='red';">Click to make it red!</p>
+		<br>
+
+		<h2>JavaScript can show/hide HTML elements</h2>
+		<p id="demo3" onclick="hide()">Hide me!</p>
+		<button onclick="show()" id="showButton" disabled>Show the hidden</button>
+	</div> <!--end of container -->
+
+	<script>
+		function demo() {
+			document.getElementById('demo').innerHTML = "See! It changed 😉";
+		}
+
+		function hide() {
+			document.getElementById('demo3').style.display = 'none';
+			document.getElementById('showButton').disabled = false;
+		}
+
+		function show() {
+			document.getElementById('demo3').style.display = 'block';
+		}
+	</script>
+</body>
+</html>
