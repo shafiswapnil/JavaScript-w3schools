@@ -1,0 +1,13 @@
+body {
+	font-family: sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 50px auto;
+}
+
+a {
+	color: blueviolet;
+	font-style: italic;
+}
